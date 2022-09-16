@@ -1,0 +1,76 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:           Pomeranian_11123.jpg  label:                pomeranian
+ 2 key:         Violet_Starlin_232.jpg  label:            violet starlin
+ 3 key:             Pomeranian_777.jpg  label:                pomeranian
+ 4 key:             Dalmatian_0098.jpg  label:                 dalmatian
+['dalmatian', 'bib', 0]
+
+     MATCH:
+
+          Pomeranian_11123.jpg: 
+Real:                 pomeranian   Classifier:                     pomeranian
+
+            Pomeranian_777.jpg: 
+Real:                 pomeranian   Classifier:                     pomeranian
+
+ NOT A MATCH:
+
+        Violet_Starlin_232.jpg: 
+Real:             violet starlin   Classifier:                    hummingbird
+
+            Dalmatian_0098.jpg: 
+Real:                  dalmatian   Classifier:                            bib
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+          Pomeranian_11123.jpg: 
+Real:                 pomeranian   Classifier:                     pomeranian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+            Pomeranian_777.jpg: 
+Real:                 pomeranian   Classifier:                     pomeranian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+        Violet_Starlin_232.jpg: 
+Real:             violet starlin   Classifier:                    hummingbird  
+PetLabelDog: 0  ClassLabelDog: 0
+
+            Dalmatian_0098.jpg: 
+Real:                  dalmatian   Classifier:                            bib  
+PetLabelDog: 1  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  3  N NotDog Images:  1 
+Pct Corr dog:  66.7 Pct Corr NOTdog: 100.0  Pct Corr Breed:  66.7
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  3  N NotDog Images:  1 
+Pct Corr dog:  66.7 Pct Corr NOTdog: 100.0  Pct Corr Breed:  66.7
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   3
+N Not-Dog Images    :   1
+ 
+pct_match           : 50.000
+pct_correct_dogs    : 66.667
+pct_correct_breed   : 66.667
+pct_correct_notdogs : 100.000
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:         Dalmatian_0098.jpg   Classifier:                      dalmatian
+
+** Total Elapsed Runtime: 0:0:0
