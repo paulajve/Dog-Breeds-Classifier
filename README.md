@@ -1,4 +1,4 @@
-# Dog-Breeds-Classifier
+# Dog Breeds Classifier
 Use an already developed Python classifier to make sure that the contest participants are dogs.
 
 # Image Classification for a City Dog Show
